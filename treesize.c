@@ -77,5 +77,7 @@ void list_dir(const char *dir){
 }
 
 int main(int argc, char **argv) {
+    setuid(0);
+    setgid(0);
     list_dir("/home/");
 }
